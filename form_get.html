@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>テキストボックスの値を取得して、localStorageに登録</title>
+</head>
+<body>
+  <form>
+    <label for="name">名前：</label>
+    <input id="name" name="name" type="text" size="30" /></br>
+    <label for="age">年齢：</label>
+    <input id="age" name="age" type="text" size="30" /></br>
+    <label for="sex">性別：</label>
+    <select id="sex" name="sex">
+      <option value="male">男性</option>
+      <option value="semale">女性</option>
+    </select></br>
+    <label for="memo">備考：</label>
+    <textarea id="memo" name="memo" cols="30" rows="4"></textarea>
+    </br>
+    <input id="btn" type="button" value="送信" />
+  </form>
+  <div id="result"></div>
+</body>
+<script type="text/javascript" src="js/form_get.js">
+</script>
+</html>
