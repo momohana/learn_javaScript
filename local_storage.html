@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>WebStrage API</title>
+<script type="text/javascript">
+  function init() {
+    // Artisticという値を持ったHashikawaを追加
+    localStorage.Hashikawa = "Artistic";
+    // データを削除
+    localStorage.removeItem("Hashikawa");
+    // 追加したデータを抽出
+    var val = localStorage.Hashikawa;
+    // 抽出したデータを表示
+    document.querySelector("#result").innerHTML = val;
+  }
+</script>
+</head>
+<body onload="init()">
+  <div id="result"></div>
+</body>
+</html>
