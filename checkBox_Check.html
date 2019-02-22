@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+  </head>
+  <body>
+    <table id="tb01">
+      <tr>
+        <th>#</th>
+        <th>id</th>
+        <th>name</th>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>001</td>
+        <td>test_001</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>002</td>
+        <td>test_002</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>003</td>
+        <td>test_003</td>
+      </tr>
+    </table>
+    <input type="button" value="Exec" onclick="onButtonClick();" />
+    <div id="output"></div>
+  </body>
+  <script type="text/javascript" language="javascript">
+    var table = document.getElementById('tb01');
+    function onButtonClick() {
+      check1 = document.form1.Checkbox1.checked;
+      check2 = document.form1.Checkbox2.checked;
+
+      target = document.getElementById("output");
+      if (check1 == true) {
+        target.innerHTML = "チェック項目1がチェックされています。<br />";
+      } else {
+        target.innerHTML = "チェック項目1がチェックされていません。 <br />";
+      }
+      if (check2 == true) {
+        target.innerHTML += "チェック項目2がチェックされています。 <br />";
+      } else {
+        target.innerHTML += "チェック項目2がチェックされていません。<br />";
+      }
+    }
+  </script>
+</html>
