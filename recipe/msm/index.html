@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>日付→テキスト変換</title>
+    <script src="main.jss" defer></script>
+</head>
+<body>
+    <form action="" method="POST" id="myForm">
+        <div class="form-example">
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-example">
+            <label for="requestTime">RequestTime</label>
+            <input type="datetime-local" name="requestTime"
+                   id="requestTime" value="2019-01-01T09:00"
+                   min="2018-04-01T00:00" max="2020-03-31T23:59">
+        </div>
+        <div class="form-example">
+            <label for="completedTime">CompletedTime</label>
+            <input type="datetime-local" name="completedTime"
+                   id="completedTime" value="2019-01-01T09:00"
+                   min="2018-04-01T00:00" max="2020-03-31T23:59">
+        </div>
+        <div class="form-example">
+            <input type="submit" value="Subscribe!">
+        </div>
+    </form>
+</body>
+</html>
